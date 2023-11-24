@@ -1,6 +1,7 @@
 'use strict';
 
 import { onEvent, select, selectById, selectAll, print } from "./utility.js";
+import { Contact } from "./contact.js";
 
 const contacts = selectById('contactsContainer');
 const counter = selectById('counter');
@@ -8,30 +9,6 @@ const contactInput = selectById('contactInput');
 const add = selectById('add');
 const corrections = select('.corrections');
 const contactsArray = [];
-
-class Contact {
-    #name;
-    #city;
-    #email;
-
-    constructor(name, city, email) {
-        this.#name = name;
-        this.#city = city;
-        this.#email = email;
-    }
-
-    get name() {
-        return this.#name;
-    }
-
-    get city() {
-        return this.#city;
-    }
-
-    get email() {
-        return this.#email;
-    }
-}
 
 function listContacts(name, city, email) {
     const newContact = new Contact(name, city, email);
