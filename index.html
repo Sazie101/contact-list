@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Samuel Yazie">
+        <title>Contacts</title>
+        <link rel="stylesheet" href="./assets/style/index.css" media="all">
+        <!-- 'defer' is not required when you use modules ;) -->
+        <script src="./assets/script/index.js" type="module"></script>
+    </head>
+    <body>
+        <div class="everything">
+            <form>
+                <h1>Contacts</h1>
+                <div class="inputs">
+                    <input type="text" id="contactInput" placeholder="Contact info (Name, City, Email)" autocomplete="off">
+                    <button id="add">Add</button>
+                </div>
+                <p class="corrections"></p>
+            </form>
+            <div id="contactsContainer"></div>
+            <div class="counter" id="counter">Contacts: 0</div>
+        </div>
+    </body>
+</html>
