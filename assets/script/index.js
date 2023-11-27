@@ -21,9 +21,9 @@ function listContacts(name, city, email) {
     const cityParagraph = document.createElement('p');
     const emailParagraph = document.createElement('p');
 
-    nameParagraph.textContent = `Name: ${newContact.name}`;
-    cityParagraph.textContent = `City: ${newContact.city}`;
-    emailParagraph.textContent = `Email: ${newContact.email}`;
+    nameParagraph.innerText = `Name: ${newContact.name}`;
+    cityParagraph.innerText = `City: ${newContact.city}`;
+    emailParagraph.innerText = `Email: ${newContact.email}`;
 
     contactDiv.appendChild(nameParagraph);
     contactDiv.appendChild(cityParagraph);
